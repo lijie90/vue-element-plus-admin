@@ -121,15 +121,20 @@ export default {
     code: 'Verification code',
     codePlaceholder: 'Please input verification code'
   },
+  workCategoryManger: {
+    mainCategoryName: '大类名称',
+    subCategoryName: '小类名称列表',
+    teamMaxNum: '参赛队人员上限',
+    teacherMaxNum: '指导教师人员上限',
+    nationalTeamMaxNum: '国赛队伍上限'
+  },
   router: {
     login: 'Login',
-    level: 'Multi level menu',
-    menu: 'Menu',
-    menu1: 'Menu1',
-    menu11: 'Menu1-1',
-    menu111: 'Menu1-1-1',
-    menu12: 'Menu1-2',
-    menu2: 'Menu2',
+    workCategoryManagement: 'work category management',
+    workManagement: 'work management',
+    userManagement: 'user management',
+    studentManagement: 'student management',
+    teacherManagement: 'teacher management',
     dashboard: 'Dashboard',
     analysis: 'Analysis',
     workplace: 'Workplace',

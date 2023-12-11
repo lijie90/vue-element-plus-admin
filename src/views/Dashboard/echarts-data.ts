@@ -5,24 +5,11 @@ const { t } = useI18n()
 
 export const lineOptions: EChartsOption = {
   title: {
-    text: t('analysis.monthlySales'),
+    text: '历年参赛人数',
     left: 'center'
   },
   xAxis: {
-    data: [
-      t('analysis.january'),
-      t('analysis.february'),
-      t('analysis.march'),
-      t('analysis.april'),
-      t('analysis.may'),
-      t('analysis.june'),
-      t('analysis.july'),
-      t('analysis.august'),
-      t('analysis.september'),
-      t('analysis.october'),
-      t('analysis.november'),
-      t('analysis.december')
-    ],
+    data: [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022],
     boundaryGap: false,
     axisTick: {
       show: false
@@ -74,7 +61,7 @@ export const lineOptions: EChartsOption = {
 
 export const pieOptions: EChartsOption = {
   title: {
-    text: t('analysis.userAccessSource'),
+    text: '各参赛作品大类作品数量',
     left: 'center'
   },
   tooltip: {
@@ -84,26 +71,19 @@ export const pieOptions: EChartsOption = {
   legend: {
     orient: 'vertical',
     left: 'left',
-    data: [
-      t('analysis.directAccess'),
-      t('analysis.mailMarketing'),
-      t('analysis.allianceAdvertising'),
-      t('analysis.videoAdvertising'),
-      t('analysis.searchEngines')
-    ]
+    data: ['软件应用与开发', '微课与教学辅助', '物联网应用', '信息可视化设计']
   },
   series: [
     {
-      name: t('analysis.userAccessSource'),
+      name: '参赛作品数量',
       type: 'pie',
       radius: '55%',
       center: ['50%', '60%'],
       data: [
-        { value: 335, name: t('analysis.directAccess') },
-        { value: 310, name: t('analysis.mailMarketing') },
-        { value: 234, name: t('analysis.allianceAdvertising') },
-        { value: 135, name: t('analysis.videoAdvertising') },
-        { value: 1548, name: t('analysis.searchEngines') }
+        { value: 335, name: '软件应用与开发' },
+        { value: 310, name: '微课与教学辅助' },
+        { value: 234, name: '物联网应用' },
+        { value: 135, name: '信息可视化设计' }
       ]
     }
   ]

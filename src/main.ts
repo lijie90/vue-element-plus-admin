@@ -39,7 +39,6 @@ const setupAll = async () => {
   const app = createApp(App)
 
   await setupI18n(app)
-
   setupStore(app)
 
   setupGlobCom(app)

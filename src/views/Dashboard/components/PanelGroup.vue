@@ -2,12 +2,9 @@
 import { ElRow, ElCol, ElCard, ElSkeleton } from 'element-plus'
 import { CountTo } from '@/components/CountTo'
 import { useDesign } from '@/hooks/web/useDesign'
-import { useI18n } from '@/hooks/web/useI18n'
 import { ref, reactive } from 'vue'
 import { getCountApi } from '@/api/dashboard/analysis'
 import type { AnalysisTotalTypes } from '@/api/dashboard/analysis/types'
-
-const { t } = useI18n()
 
 const { getPrefixCls } = useDesign()
 
@@ -49,9 +46,9 @@ getCount()
                 </div>
               </div>
               <div class="flex flex-col justify-between">
-                <div :class="`${prefixCls}__item--text text-16px text-gray-500 text-right`">{{
-                  t('analysis.newUser')
-                }}</div>
+                <div :class="`${prefixCls}__item--text text-16px text-gray-500 text-right`"
+                  >作品数</div
+                >
                 <CountTo
                   class="text-20px font-700 text-right"
                   :start-val="0"
@@ -78,9 +75,9 @@ getCount()
                 </div>
               </div>
               <div class="flex flex-col justify-between">
-                <div :class="`${prefixCls}__item--text text-16px text-gray-500 text-right`">{{
-                  t('analysis.unreadInformation')
-                }}</div>
+                <div :class="`${prefixCls}__item--text text-16px text-gray-500 text-right`"
+                  >学生数量</div
+                >
                 <CountTo
                   class="text-20px font-700 text-right"
                   :start-val="0"
@@ -107,9 +104,9 @@ getCount()
                 </div>
               </div>
               <div class="flex flex-col justify-between">
-                <div :class="`${prefixCls}__item--text text-16px text-gray-500 text-right`">{{
-                  t('analysis.transactionAmount')
-                }}</div>
+                <div :class="`${prefixCls}__item--text text-16px text-gray-500 text-right`"
+                  >教师数量</div
+                >
                 <CountTo
                   class="text-20px font-700 text-right"
                   :start-val="0"
@@ -136,9 +133,9 @@ getCount()
                 </div>
               </div>
               <div class="flex flex-col justify-between">
-                <div :class="`${prefixCls}__item--text text-16px text-gray-500 text-right`">{{
-                  t('analysis.totalShopping')
-                }}</div>
+                <div :class="`${prefixCls}__item--text text-16px text-gray-500 text-right`"
+                  >大赛历年参与人数</div
+                >
                 <CountTo
                   class="text-20px font-700 text-right"
                   :start-val="0"

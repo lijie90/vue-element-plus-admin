@@ -122,13 +122,12 @@ export default {
   },
   router: {
     login: '登录',
-    level: '多级菜单',
-    menu: '菜单',
-    menu1: '菜单1',
-    menu11: '菜单1-1',
-    menu111: '菜单1-1-1',
-    menu12: '菜单1-2',
-    menu2: '菜单2',
+    achievements: '作品管理',
+    workCategoryManagement: '作品类别管理',
+    workManagement: '作品管理',
+    userManagement: '用户管理',
+    studentManagement: '学生管理',
+    teacherManagement: '教师管理',
     dashboard: '首页',
     analysis: '分析页',
     workplace: '工作台',
@@ -179,6 +178,13 @@ export default {
     imageCropping: '图片裁剪',
     videoPlayer: '视频播放器',
     tableVideoPreview: '表格视频预览'
+  },
+  workCategoryManger: {
+    mainCategoryName: '大类名称',
+    subCategoryName: '小类名称列表',
+    teamMaxNum: '参赛队人员上限',
+    teacherMaxNum: '指导教师人员上限',
+    nationalTeamMaxNum: '国赛队伍上限'
   },
   permission: {
     hasPermission: '请设置操作权限值'
